@@ -1,0 +1,98 @@
+/* Reset & Base */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #e4f0ff);
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #1e2a3a;
+    letter-spacing: 0.5px;
+}
+
+/* Container */
+.internship-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Card Style */
+.internship-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(200, 200, 255, 0.3);
+}
+
+.internship-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.internship-card h2 {
+    font-size: 1.4rem;
+    color: #1f3a60;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+/* Card content */
+.internship-card ul {
+    padding-left: 20px;
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 1rem;
+}
+
+.internship-card ul li {
+    margin-bottom: 10px;
+}
+
+/* View Details Button */
+.details-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 5px 12px rgba(0, 123, 255, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.details-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003e8a);
+    transform: translateY(-2px);
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 900px) {
+    .internship-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .details-button {
+        width: 100%;
+        text-align: center;
+    }
+}
